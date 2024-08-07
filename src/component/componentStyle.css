@@ -1,0 +1,50 @@
+.MainContainer {
+  background-color: #f4f5f8;
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  border-radius: 20px;
+}
+
+.WorkArea {
+  flex: 0.7;
+}
+
+.sb-container {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+
+.sb-header {
+  background: white;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sb-search {
+  background: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sb-conversation {
+  background: white;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px;
+  flex: 1;
+}
+
+.search-input {
+  outline-width: 0;
+  border: none;
+  margin-left: 10px;
+  font-size: 1rem;
+}
