@@ -15,18 +15,18 @@ function SideBar() {
   const [conversations, setConversations] = useState([
     {
       name: "Lotfi",
-      lastMesssage: "this is the last message #1",
+      lastMessage: "this is the last message #1",
       timeStamp: "today",
     },
 
     {
       name: "jelo",
-      lastMesssage: "this is the last message #2",
+      lastMessage: "this is the last message #2",
       timeStamp: "today",
     },
     {
       name: "Tifo",
-      lastMesssage: "this is the last message #3",
+      lastMessage: "this is the last message #3",
       timeStamp: "today",
     },
   ]);
