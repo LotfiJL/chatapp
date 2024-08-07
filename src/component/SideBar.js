@@ -66,7 +66,7 @@ function SideBar() {
           conversations.map((conversation) => conversation.name)
         )} */}
         {conversations.map((conversation) => {
-          return <Conversation props={conversation} />;
+          return <Conversation props={conversation} key={conversation.name} />;
         })}
       </div>
     </div>
