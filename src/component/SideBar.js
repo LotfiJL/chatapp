@@ -32,12 +32,13 @@ function SideBar() {
   ]);
   return (
     <div className="sb-container">
-      <div className="sb-header">
+      {/* <div className="sb-header">
         <div>
           <IconButton>
             <AccountCircleIcon />
           </IconButton>
         </div>
+
         <div>
           <IconButton>
             <PersonAddIcon />
@@ -55,16 +56,14 @@ function SideBar() {
             <NightlightIcon />
           </IconButton>
         </div>
-      </div>
+      </div> */}
+
       <div className="sb-search">
         <SearchIcon />
         <input type="text" placeholder="search" className="search-input" />
       </div>
+
       <div className="sb-conversation">
-        {/* {console.log(
-          "op",
-          conversations.map((conversation) => conversation.name)
-        )} */}
         {conversations.map((conversation) => {
           return <Conversation props={conversation} key={conversation.name} />;
         })}

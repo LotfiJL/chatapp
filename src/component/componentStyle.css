@@ -51,8 +51,8 @@
 
 .conversation-container {
   display: grid;
-  grid-template-columns: 32px auto auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: 30px auto auto;
+  grid-template-rows: 35px 35px;
   column-gap: 10px;
   padding: 5px;
   margin: 5px;
@@ -60,7 +60,6 @@
 }
 
 .conversation-icon {
-  border: 1px solid red;
   grid-area: 1/1/3/2;
   display: flex;
   justify-content: center;
@@ -105,7 +104,7 @@
 }
 
 .chatArea-header {
-  background-color: blueviolet;
+  display: flex;
 }
 
 .Messages-body {
