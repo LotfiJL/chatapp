@@ -32,7 +32,7 @@ function SideBar() {
   ]);
   return (
     <div className="sb-container">
-      {/* <div className="sb-header">
+      <div className="sb-header">
         <div>
           <IconButton>
             <AccountCircleIcon />
@@ -56,7 +56,7 @@ function SideBar() {
             <NightlightIcon />
           </IconButton>
         </div>
-      </div> */}
+      </div>
 
       <div className="sb-search">
         <SearchIcon />

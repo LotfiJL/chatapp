@@ -52,7 +52,7 @@
 .conversation-container {
   display: grid;
   grid-template-columns: 30px auto auto;
-  grid-template-rows: 35px 35px;
+  grid-template-rows: 25px 40px;
   column-gap: 10px;
   padding: 5px;
   margin: 5px;
@@ -104,7 +104,13 @@
 }
 
 .chatArea-header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30px auto auto;
+  grid-template-rows: 25px 40px;
+  column-gap: 10px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
 }
 
 .Messages-body {

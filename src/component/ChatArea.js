@@ -5,7 +5,6 @@ function ChatArea({ props }) {
   return (
     <div className="chatArea-container">
       <div className="chatArea-header">
-        chatArea-header
         <p className="conversation-icon">{props.name[0]}</p>
         <p className="conversation-title">{props.name}</p>
         <p className="conversation-lastMessage ">{props.lastMessage}</p>
