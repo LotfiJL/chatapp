@@ -3,6 +3,8 @@ import "./componentStyle.css";
 import SideBar from "./SideBar";
 import WorkArea from "./WorkArea";
 import ChatArea from "./ChatArea";
+import Welcome from "./Welcome";
+import CreateGroups from "./CreateGroups";
 function MainConatainer() {
   const [conversations, setConversations] = useState([
     {
@@ -15,9 +17,11 @@ function MainConatainer() {
   return (
     <div className="MainContainer">
       <SideBar />
-      {conversations.map((conversation) => {
+      {/* <Welcome /> */}
+      <CreateGroups />
+      {/* {conversations.map((conversation) => {
         return <ChatArea props={conversation} key={conversation.name} />;
-      })}
+      })} */}
     </div>
   );
 }
