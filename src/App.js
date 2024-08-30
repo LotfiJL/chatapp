@@ -1,10 +1,12 @@
 import "./App.css";
 
 import MainConatainer from "./component/MainConatainer";
+import Login from "./component/Login";
 function App() {
   return (
     <div className="App">
-      <MainConatainer />
+      {/* <MainConatainer /> */}
+      <Login />
     </div>
   );
 }

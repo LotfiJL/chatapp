@@ -4,7 +4,7 @@ const Welcome = () => {
   return (
     <div className="welcome-container">
       <img
-        src={`${process.env.PUBLIC_URL}/assets/Chatapp.jpeg`}
+        src={`${process.env.PUBLIC_URL}/assets/Chatapp.png`}
         alt="Logo"
         className="welcome-img"
       />

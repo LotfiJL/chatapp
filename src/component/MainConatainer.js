@@ -17,8 +17,8 @@ function MainConatainer() {
   return (
     <div className="MainContainer">
       <SideBar />
-      {/* <Welcome /> */}
-      <CreateGroups />
+      <Welcome />
+      {/* <CreateGroups /> */}
       {/* {conversations.map((conversation) => {
         return <ChatArea props={conversation} key={conversation.name} />;
       })} */}
