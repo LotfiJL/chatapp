@@ -5,6 +5,8 @@ import WorkArea from "./WorkArea";
 import ChatArea from "./ChatArea";
 import Welcome from "./Welcome";
 import CreateGroups from "./CreateGroups";
+import UsersGroups from "./Users_Groups";
+import { Outlet } from "react-router-dom";
 function MainConatainer() {
   const [conversations, setConversations] = useState([
     {
@@ -17,7 +19,9 @@ function MainConatainer() {
   return (
     <div className="MainContainer">
       <SideBar />
-      <Welcome />
+      <Outlet />
+      {/* <UsersGroups /> */}
+      {/* <Welcome /> */}
       {/* <CreateGroups /> */}
       {/* {conversations.map((conversation) => {
         return <ChatArea props={conversation} key={conversation.name} />;

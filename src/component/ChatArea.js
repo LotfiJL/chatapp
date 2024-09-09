@@ -6,16 +6,39 @@ import "./componentStyle.css";
 import { Icon } from "@mui/material";
 import MessageOtheres from "./MessageOtheres";
 import MessageSelf from "./MessageSelf";
-function ChatArea({ props }) {
+function ChatArea() {
   const [Messages, setMessages] = useState({
     name: "Lotfi",
     lastMessage: "this is the last message #1",
     timeStamp: "today",
   });
+
+  const [conversations, setConversations] = useState([
+    {
+      name: "Lotfi",
+      lastMessage: "this is the last message #1",
+      timeStamp: "today",
+    },
+
+    {
+      name: "Lotfi",
+      lastMessage: "this is the last message #1",
+      timeStamp: "today",
+    },
+
+    {
+      name: "Lotfi",
+      lastMessage: "this is the last message #1",
+      timeStamp: "today",
+    },
+  ]);
+
+  const props = conversations;
+
   return (
     <div className="chatArea-container">
       <div className="chatArea-header">
-        <p className="conversation-icon">{props.name[0]}</p>
+        <p className="conversation-icon">{props[0].name[0]}</p>
         <div className="header-text">
           <p className="conversation-title">{props.name}</p>
           <p className="conversation-timeStamp">{props.timeStamp}</p>
