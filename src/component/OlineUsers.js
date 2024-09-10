@@ -11,7 +11,7 @@ const Users_Groups = () => {
           alt="Logo"
           style={{ width: "2rem", height: "2rem" }}
         />
-        <p className="ug-title"> Available Users</p>
+        <p className="ug-title"> online users</p>
       </div>
       <div className="sb-search">
         <IconButton>
