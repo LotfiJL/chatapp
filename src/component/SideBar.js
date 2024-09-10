@@ -12,7 +12,14 @@ import SearchIcon from "@mui/icons-material/Search";
 import Conversation from "./Conversation.js";
 import { useNavigate } from "react-router-dom";
 
+import LightModeIcon from "@mui/icons-material/LightMode";
+import darkModeIcon from "@mui/icons-material/DarkMode";
+import { light } from "@mui/material/styles/createPalette.js";
+
 function SideBar() {
+  const navigate = useNavigate();
+
+  const [LightTheme, setLightTheme] = useState(true);
   const [conversations, setConversations] = useState([
     {
       name: "Lotfi",
@@ -32,10 +39,9 @@ function SideBar() {
     },
   ]);
 
-  const navigate = useNavigate();
   return (
     <div className="sb-container">
-      <div className="sb-header">
+      <div className={`sb-header ${LightTheme ? "" : "dark"}`}>
         <div>
           <IconButton>
             <AccountCircleIcon />
@@ -43,11 +49,11 @@ function SideBar() {
         </div>
 
         <div>
-          <IconButton onClick={() => navigate("groups")}>
+          <IconButton onClick={() => navigate("online")}>
             <PersonAddIcon />
           </IconButton>
 
-          <IconButton onClick={() => navigate("online")}>
+          <IconButton onClick={() => navigate("groups")}>
             <GroupAddIcon />
           </IconButton>
 
@@ -55,8 +61,18 @@ function SideBar() {
             <AddCircleIcon />
           </IconButton>
 
-          <IconButton>
-            <NightlightIcon />
+          <IconButton
+            onClick={() =>
+              setLightTheme((prevValue) => {
+                return !prevValue;
+              })
+            }
+          >
+            {!LightTheme && <LightModeIcon />}
+
+            {LightTheme && <NightlightIcon />}
+
+            {console.log("prev is ", LightTheme)}
           </IconButton>
         </div>
       </div>
