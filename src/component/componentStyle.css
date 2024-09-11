@@ -29,6 +29,23 @@
 
 .dark {
   background-color: #2d3941;
+  color: whitesmoke;
+}
+
+.dark2 {
+  background-color: #2d3941;
+  color: whitesmoke;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px;
+  flex: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.icons {
+  width: 1.25em;
+  height: 1.25em;
 }
 .sb-search {
   background: white;
