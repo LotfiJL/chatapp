@@ -13,11 +13,18 @@ import Conversation from "./Conversation.js";
 import { useNavigate } from "react-router-dom";
 
 import LightModeIcon from "@mui/icons-material/LightMode";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "../features/themeSlice.js";
 
 function SideBar() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  // const [LightTheme, setLightTheme] = useState(true);
 
-  const [LightTheme, setLightTheme] = useState(true);
+  const LightTheme = useSelector((state) => state.themekey);
+
+  console.log("LT is ", LightTheme);
+
   const [conversations, setConversations] = useState([
     {
       name: "Lotfi",
@@ -60,11 +67,9 @@ function SideBar() {
           </IconButton>
 
           <IconButton
-            onClick={() =>
-              setLightTheme((prevValue) => {
-                return !prevValue;
-              })
-            }
+            onClick={() => {
+              dispatch(toggleTheme());
+            }}
           >
             {!LightTheme && (
               <LightModeIcon className={`icon ${LightTheme ? "" : "dark"}`} />
